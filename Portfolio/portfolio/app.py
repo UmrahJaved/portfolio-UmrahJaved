@@ -250,7 +250,7 @@ with right:
         st.link_button("💻 GitHub", "https://github.com/UmrahJaved")
         st.link_button("💼 LinkedIn", "https://www.linkedin.com/in/umrah-javed/")
 
-        with open("portfolio/assets/Umrah_Javed_CV (1).docx", "rb") as file:
+        with open("Portfolio/portfolio/assets/Umrah_Javed_CV (1).docx", "rb") as file:
             st.download_button(
                 "📄 Download CV",
                 file,
@@ -389,3 +389,4 @@ st.markdown("""
 <p>© 2026 Umrah Javed • Built with Streamlit</p>
 </center>
 """, unsafe_allow_html=True)
+
