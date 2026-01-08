@@ -285,7 +285,7 @@ col1, col2, col3 = st.columns(3, gap='medium', width = "stretch" )
 with col1:
     st.markdown("""
     <div class="card">    
-        <img src='https://private-user-images.githubusercontent.com/96992159/531627145-ab64fcd4-85ec-48b1-8705-7bee6bceff72.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Njc1MTU1MTIsIm5iZiI6MTc2NzUxNTIxMiwicGF0aCI6Ii85Njk5MjE1OS81MzE2MjcxNDUtYWI2NGZjZDQtODVlYy00OGIxLTg3MDUtN2JlZTZiY2VmZjcyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAxMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMTA0VDA4MjY1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJmMWM2YjQzMWQ2ZGM4OGY5N2Q2MTY3YjM1ZmEwNDEwNmRlOTM1YmY3NzJhYjhiMDFlZGNmMjQ3OTI4YmJkZTYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.6_fm-ANM_jxWbDfm00bHp4z0LJRWLY2aYBHMgB7bEQ8' heigth =800 >
+        <img src='https://github.com/UmrahJaved/Coffee-Shop-Sales-Dashboard/blob/main/Coffee_sales_dashboard.png?raw=true' heigth =800 >
         <h3 style='color:#334155'>☕ Coffee Shop Sales Dashboard</h3>
         <p>
             Interactive Excel dashboard analyzing sales trends,
@@ -389,4 +389,5 @@ st.markdown("""
 <p>© 2026 Umrah Javed • Built with Streamlit</p>
 </center>
 """, unsafe_allow_html=True)
+
 
