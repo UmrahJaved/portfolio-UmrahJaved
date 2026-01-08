@@ -10,6 +10,35 @@ st.set_page_config(
 # CSS
 st.markdown("""
 <style>
+.stLinkButton > a {
+    background-color: #eef3f9;   
+    color: #334155;
+    border-radius: 8px;
+    padding: 0.4rem 0.4rem;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+
+.stLinkButton > a:hover {
+    transform: translateY(-2px);
+}
+
+.stDownloadButton > button {
+    background-color: #eef3f9 ;
+    color: #334155 ;
+    border-radius: 10px;
+    padding: 0.7rem 1rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.stDownloadButton > button:hover {
+    transform: translateY(-2px);
+}           
+
+            
 .card-img-wrapper {
     overflow: hidden;
     border-radius: 12px;
@@ -44,6 +73,7 @@ st.markdown("""
             
 .header-card h3, .header-card h2 {
     margin-bottom: 0.5rem;
+    color: #334155;
 }
             
 .header-card p {
@@ -61,6 +91,7 @@ st.markdown("""
 .header-links a, .header-links button {
     width: 100%;
     margin-bottom: 0.6rem;
+    color: #334155;
 }
 
 @media (max-width: 900px) {
@@ -79,7 +110,9 @@ st.markdown("""
 
 h1, h2, h3 {
     font-family: 'Inter', sans-serif;
-    color: #0F172A;
+    
+    color: #334155;
+    
 }
 
 p, li {
@@ -209,8 +242,10 @@ with center:
 # Right: LINKS
 with right:
     with st.container():
-        st.markdown("### Get to know me")
-
+        st.markdown(
+            "<h3 style='color:#334155;'>Get to know me</h3>",
+            unsafe_allow_html=True
+        )
         st.link_button("📧 Contact", "mailto:umrahjaved.1@gmail.com")
         st.link_button("💻 GitHub", "https://github.com/UmrahJaved")
         st.link_button("💼 LinkedIn", "https://www.linkedin.com/in/umrah-javed/")
@@ -221,10 +256,14 @@ with right:
                 file,
                 file_name="Umrah_Javed_CV.docx"
             )
-
+ 
 
 # Skills
-st.markdown("## 🛠 Skills")
+st.markdown(
+            "<h3 style='color:#334155;'>🛠 Skills</h3>",
+            unsafe_allow_html=True
+        )
+
 
 skills = [
     "Excel", "Postgres", "SQL", "Python", "Streamlit", "Power BI", "Tableau", "Pandas", "NumPy",
@@ -237,14 +276,17 @@ st.markdown("".join([f"<span class='skill'>{s}</span>" for s in skills]),
             unsafe_allow_html=True)
 
 # Projects
-st.markdown("## 🚀 Featured Projects")
+st.markdown(
+            "<h3 style='color:#334155;'>🚀 Featured Projects</h3>",
+            unsafe_allow_html=True
+        )
 col1, col2, col3 = st.columns(3, gap='medium', width = "stretch" )
 # Project 1
 with col1:
     st.markdown("""
     <div class="card">    
         <img src='https://private-user-images.githubusercontent.com/96992159/531627145-ab64fcd4-85ec-48b1-8705-7bee6bceff72.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Njc1MTU1MTIsIm5iZiI6MTc2NzUxNTIxMiwicGF0aCI6Ii85Njk5MjE1OS81MzE2MjcxNDUtYWI2NGZjZDQtODVlYy00OGIxLTg3MDUtN2JlZTZiY2VmZjcyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAxMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMTA0VDA4MjY1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJmMWM2YjQzMWQ2ZGM4OGY5N2Q2MTY3YjM1ZmEwNDEwNmRlOTM1YmY3NzJhYjhiMDFlZGNmMjQ3OTI4YmJkZTYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.6_fm-ANM_jxWbDfm00bHp4z0LJRWLY2aYBHMgB7bEQ8' heigth =800 >
-        <h3>☕ Coffee Shop Sales Dashboard</h3>
+        <h3 style='color:#334155'>☕ Coffee Shop Sales Dashboard</h3>
         <p>
             Interactive Excel dashboard analyzing sales trends,
             peak hours, revenue performance, and customer behavior.
@@ -265,7 +307,7 @@ with col2:
     st.markdown("""
     <div class="card">
         <img src ='https://user-images.githubusercontent.com/98814867/159731156-2f00d42b-31fa-45c1-9b17-92d97cbff9a5.jpg' width=600 >
-        <h3>🍽 Restaurant Data Visualization</h3>
+        <h3 style='color:#334155'>🍽 Restaurant Data Visualization</h3>
         <p>
             Collaborative data visualization project delivering insights
             for restaurant business strategy.
@@ -286,7 +328,7 @@ with col3:
     st.markdown("""
     <div class="card">
         <img src='https://user-images.githubusercontent.com/96992159/153191172-fc943e5f-ff48-446f-8a41-25cd799fe487.PNG' width=400>
-        <h3>📈 Challenge Data Analysis</h3>
+        <h3 style='color:#334155'>📈 Challenge Data Analysis</h3>
         <p>
             Cleansed and analyzed a real-world dataset to extract key business
             insights and visualize trends with Python and data visualization libraries.
@@ -303,7 +345,10 @@ with col3:
     """, unsafe_allow_html=True)
 
 #Experience
-st.markdown("## 💼 Experience")
+st.markdown(
+            "<h3 style='color:#334155;'>💼 Experience</h3>",
+            unsafe_allow_html=True)
+
 
 st.markdown("""
 **Python Data Scientist & AI Developer**  
@@ -326,7 +371,10 @@ BeCode, Brussels
 """)
 
 # Education
-st.markdown("## 🎓 Education")
+st.markdown(
+            "<h3 style='color:#334155;'>🎓 Education</h3>",
+            unsafe_allow_html=True)
+
 
 st.markdown("""
 - **AI & Data Science Bootcamp** — BeCode, Brussels  
